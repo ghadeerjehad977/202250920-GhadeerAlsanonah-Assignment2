@@ -22,7 +22,7 @@ improved version of Assignment 1 portfolio website. Focuses on adding interactiv
 3. Open `index.html` in your browser
 
 ## AI Usage Summary
-AI tools were used to assist with styling, debugging, adding interactivity, and improving code structure.  
+AI tools were used to assist with styling, debugging, developing functions for interactivity, and improving code structure.  
 More details are available in `docs/ai-usage-report.md`.
 
 ## Author
