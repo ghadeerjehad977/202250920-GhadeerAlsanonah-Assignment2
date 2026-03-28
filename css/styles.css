@@ -1,8 +1,10 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #3a2c2c, #2a1f2f);
     color: #f5e6e8;
+    background: 
+        radial-gradient(circle at top left, rgba(255, 150, 170, 0.4), transparent 40%),
+        linear-gradient(135deg, #3a2c2c, #2a1f2f);
 }
 /*NAV*/
 .top-bar{
@@ -65,15 +67,17 @@ body{
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
-.info-card, .project-card{
-    background: rgba(255, 255, 255, 0.08);
+.info-card,
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
     padding: 25px;
     border-radius: 20px;
     width: 260px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(245, 165, 181, 0.45);
 }
 
 /*CONTACT*/
@@ -81,17 +85,32 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 14px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+ .contact-form textarea {
     width: 300px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    border: none;
+    padding: 12px 14px;
+    margin: 0;
+    border-radius: 12px;
+    border: 1px solid rgba(245, 165, 181, 0.7);
+    background: rgba(255, 255, 255, 0.03);
+    color: #f5e6e8;
 }
 
-.contact-form button{
+.contact-form textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #d8bfc4;
+}
+
+.contact-form button,
+.togglebtn{
     padding: 10px 20px;
     background: #f5a5b5;
     border: none;
@@ -101,13 +120,31 @@ body{
 
 .hero-btn,
 .contact-form button,
-.theme-btn {
+.theme-btn,
+.togglebtn {
     transition: 0.3s;
 }
 
 .hero-btn:hover,
 .contact-form button:hover,
-.theme-btn:hover {
+.theme-btn:hover,
+.togglebtn:hover {
     transform: translateY(-2px);
     opacity: 0.9;
 }
+
+.project-card,
+.info-card {
+    transition: 0.3s;
+}
+
+.project-card:hover,
+.info-card:hover {
+    transform: scale(1.05);
+}
+
+#contact{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
