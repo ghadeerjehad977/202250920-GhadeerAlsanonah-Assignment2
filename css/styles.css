@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3a2c2c, #2a1f2f);
+    color: #f5e6e8;
+}
+/*NAV*/
+.top-bar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.theme-btn{
+    background: #f5a5b5;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+/*HERO*/
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+}
+
+.hero-text p {
+    color: #d8bfc4;
+}
+
+.hero-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #f5a5b5;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/*SECTIONS*/
+.section{
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.dark-section{
+    background: rgba(42, 31, 47, 0.75);
+    backdrop-filter: blur(8px);
+}
+
+.light-section{
+    background: rgba(227, 199, 207, 0.9);
+    color: #2a1f2f;
+}
+
+/*CARDS*/
+.card-grid{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-card, .project-card{
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 20px;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/*CONTACT*/
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-form button{
+    padding: 10px 20px;
+    background: #f5a5b5;
+    border: none;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.hero-btn,
+.contact-form button,
+.theme-btn {
+    transition: 0.3s;
+}
+
+.hero-btn:hover,
+.contact-form button:hover,
+.theme-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
